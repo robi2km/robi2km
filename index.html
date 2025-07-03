@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PKCS#11 & CipherTrust Manager Consulting</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Tailwind's slate-50 */
+            color: #334155; /* Tailwind's slate-700 */
+        }
+        .container {
+            max-width: 1200px;
+        }
+        .btn-primary {
+            @apply bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300 font-semibold;
+        }
+        .icon-wrapper {
+            @apply p-3 bg-blue-100 rounded-full text-blue-600;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-800">CryptoConsult</a>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="#services" class="text-gray-600 hover:text-blue-600 transition-colors duration-200">Services</a></li>
+                    <li><a href="#expertise" class="text-gray-600 hover:text-blue-600 transition-colors duration-200">Expertise</a></li>
+                    <li><a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors duration-200">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="md:hidden p-2 rounded-md text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <!-- Hamburger Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20 md:py-32 text-center rounded-b-xl shadow-lg">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+                Unlock Unparalleled Security with <br class="hidden md:inline">PKCS#11 & CipherTrust Manager Expertise
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 opacity-90">
+                Specialized consulting for robust cryptographic infrastructure and advanced key management.
+            </p>
+            <a href="#contact" class="btn-primary inline-flex items-center space-x-2">
+                <span>Schedule a Free Consultation</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Our Specialized Consulting Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="icon-wrapper mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plug-zap"><path d="m13 2-3 3v2l3 3"/><path d="m10 14-3 3h2l3 3"/><path d="M19 12v6a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7"/><path d="M12 22v-8"/><path d="M17 22v-8"/><path d="M17 2h-3"/><path d="M19 2v2"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">PKCS#11 Integration & Customization</h3>
+                    <p class="text-gray-600">Seamlessly integrate Hardware Security Modules (HSMs) into your existing applications and infrastructure using the PKCS#11 standard. Custom development and optimization for unique requirements.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="icon-wrapper mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">CipherTrust Manager Deployment & Configuration</h3>
+                    <p class="text-gray-600">Expert guidance on deploying, configuring, and managing Thales CipherTrust Manager for centralized key management, data encryption, and policy enforcement across your enterprise.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="icon-wrapper mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-key"><path d="M2 18v3c0 .6.4 1 1 1h4v-3h3v-3h2L9 3 2 18Z"/><path d="M18 10a2 2 0 1 1 0 4v3h4v-3a2 2 0 1 1 0-4h0Z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Advanced Key Management Strategy</h3>
+                    <p class="text-gray-600">Develop and implement comprehensive key management strategies, including key lifecycle, rotation, backup, and recovery, aligned with industry best practices and compliance mandates.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="icon-wrapper mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-fingerprint"><path d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Z"/><path d="M12 2a10 10 0 0 0-9.25 6.29"/><path d="M12 2a10 10 0 0 1 9.25 6.29"/><path d="M6 12a6 6 0 0 1 6-6"/><path d="M18 12a6 6 0 0 0-6-6"/><path d="M12 18a6 6 0 0 0 6-6"/><path d="M12 18a6 6 0 0 1-6-6"/><path d="M16 12a4 4 0 0 1-4 4"/><path d="M8 12a4 4 0 0 0 4 4"/><path d="M12 8a4 4 0 0 0-4 4"/><path d="M12 8a4 4 0 0 1 4 4"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">PKI & Digital Certificate Integration</h3>
+                    <p class="text-gray-600">Assist with integrating your Public Key Infrastructure (PKI) with HSMs and CipherTrust Manager for secure digital certificate issuance, revocation, and lifecycle management.</p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="icon-wrapper mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-search"><path d="M4 22h14a2 2 0 0 0 2-2V7.5L14.5 2H6a2 2 0 0 0-2 2v3"/><polyline points="14 2 14 8 20 8"/><circle cx="5" cy="15" r="3"/><path d="m7.5 17.5-1.5-1.5"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Cryptographic Security Audits & Compliance</h3>
+                    <p class="text-gray-600">Conduct thorough security audits of your cryptographic implementations, identify vulnerabilities, and ensure compliance with industry standards and regulatory requirements (e.g., FIPS, PCI DSS).</p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="icon-wrapper mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap"><path d="M21.42 10.982c.13.57.2 1.168.2 1.768a8 8 0 0 1-16 0c0-.599.07-1.198.2-1.768"/><path d="M19 12.835V22H5v-9.165"/><path d="m2 12 8-5 8 5 4-2V6l-4-2-8 5-8-5v6Z"/><path d="M10 7V2.5l2-1.5 2 1.5V7"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Training & Workshops</h3>
+                    <p class="text-gray-600">Customized training sessions and workshops for your teams on PKCS#11 API usage, CipherTrust Manager administration, and general cryptographic best practices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise/About Section -->
+    <section id="expertise" class="py-16 md:py-24 bg-gray-100">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800">My Expertise & Approach</h2>
+                <p class="text-lg text-gray-700 mb-4">
+                    With over <span class="font-semibold text-blue-600">[Your Number]</span> years of dedicated experience in the cryptographic security domain, I bring a unique blend of deep technical knowledge and practical implementation skills to every project. My focus is on delivering secure, efficient, and compliant solutions tailored to your specific business needs.
+                </p>
+                <p class="text-lg text-gray-700 mb-4">
+                    I specialize in the intricacies of **PKCS#11** for seamless Hardware Security Module (HSM) integration and **Thales CipherTrust Manager** for comprehensive enterprise key management. My approach is collaborative, ensuring your team gains the knowledge and tools to maintain a robust cryptographic posture long after the engagement.
+                </p>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <li>Certified in relevant cryptographic technologies <span class="text-sm text-gray-500">(e.g., CISSP, Thales Certifications - *add your own*)</span></li>
+                    <li>Proven track record of successful enterprise deployments</li>
+                    <li>Commitment to staying ahead of emerging threats and standards</li>
+                    <li>Tailored solutions, not one-size-fits-all approaches</li>
+                </ul>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <!-- Placeholder for an image or illustration -->
+                <img src="https://placehold.co/500x350/e0e7ff/4338ca?text=Your+Expertise+Image" alt="Expertise Illustration" class="rounded-xl shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section (Optional) -->
+    <section class="bg-blue-600 text-white py-16 text-center rounded-t-xl shadow-lg">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Enhance Your Cryptographic Security?</h2>
+            <p class="text-xl mb-8 opacity-90">
+                Let's discuss how my expertise can safeguard your sensitive data and ensure compliance.
+            </p>
+            <a href="#contact" class="btn-primary bg-white text-blue-600 hover:bg-gray-100 inline-flex items-center space-x-2">
+                <span>Get Started Today</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Contact Me</h2>
+            <div class="max-w-2xl mx-auto bg-gray-50 p-8 rounded-xl shadow-md">
+                <p class="text-center text-lg text-gray-600 mb-6">
+                    Fill out the form below or reach out directly to discuss your project.
+                </p>
+                <form class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="John Doe">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Your Email</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="john.doe@example.com">
+                    </div>
+                    <div>
+                        <label for="company" class="block text-sm font-medium text-gray-700 mb-1">Company (Optional)</label>
+                        <input type="text" id="company" name="company" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="Acme Corp">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Your Message</label>
+                        <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="Tell me about your project needs..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary w-full">Send Message</button>
+                </form>
+                <p class="text-center text-sm text-gray-500 mt-4">
+                    *Note: This form is for demonstration. A real website would require backend integration to send emails.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8 rounded-t-xl">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 CryptoConsult. All rights reserved.</p>
+            <p class="text-sm mt-2">
+                <a href="#" class="hover:text-blue-400 transition-colors duration-200">Privacy Policy</a> |
+                <a href="#" class="hover:text-blue-400 transition-colors duration-200">Terms of Service</a>
+            </p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <!-- Placeholder for social media icons (e.g., LinkedIn) -->
+                <a href="#" class="text-gray-400 hover:text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                </a>
+                <!-- Add more social icons as needed -->
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Basic smooth scrolling for navigation
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simple mobile menu toggle (for demonstration)
+        const mobileMenuButton = document.querySelector('header button');
+        const navMenu = document.querySelector('header nav ul'); // Assuming nav ul is the menu to toggle
+
+        if (mobileMenuButton && navMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                navMenu.classList.toggle('hidden'); // Toggle visibility of the menu
+                navMenu.classList.toggle('flex'); // Add flex for proper display when visible
+                navMenu.classList.toggle('flex-col'); // Stack items vertically on mobile
+                navMenu.classList.toggle('absolute'); // Position absolutely
+                navMenu.classList.toggle('top-16'); // Position below header
+                navMenu.classList.toggle('left-0');
+                navMenu.classList.toggle('w-full');
+                navMenu.classList.toggle('bg-white');
+                navMenu.classList.toggle('shadow-md');
+                navMenu.classList.toggle('py-4');
+                navMenu.classList.toggle('z-10');
+                navMenu.classList.toggle('items-center');
+                navMenu.classList.toggle('space-x-0');
+                navMenu.classList.toggle('space-y-4');
+            });
+        }
+
+        // Prevent default form submission for demonstration
+        document.querySelector('#contact form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // In a real application, you would send this data to a backend server
+            alert('Thank you for your message! This is a demo. Your message was not actually sent.');
+            this.reset(); // Clear the form
+        });
+    </script>
+</body>
+</html>
+
